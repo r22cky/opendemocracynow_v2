@@ -1,8 +1,15 @@
 /* Main class */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background-color: transparent;
   transition: all 0.3s ease;
+  // positionning navbar on top fixed
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  // navbar is flexbox
   display: flex;
   height: 70px;
   padding: 0px 30px;
@@ -21,7 +28,7 @@
 
 /* Navbar logo */
 .navbar-wagon-brand img {
-  width: 50px;
+  width: 100px;
 }
 
 /* Navbar right section (with form, links, button) */
@@ -124,7 +131,7 @@
   position: absolute;
   right: 10px;
   top: -6px;
-  background-color: white;
+  background-color: transparent;
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
